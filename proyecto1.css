@@ -107,13 +107,13 @@ margin: auto;
     background-color: rgb(62, 62, 62);
     list-style-type: none;
     padding: auto;
-    display: inline-block;
+    display: inline block;
     margin-left: 1170px;
 
 }
 .submenu .sub{
-
-
+box-sizing: border-box;
+border: 3px inset black;
 display: inline-block;
 position: relative;
 font-size: 3rem;
