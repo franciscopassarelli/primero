@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/tennis-ball-court-line-off-center-9205576.jpg);
+    
+
+}
+
+nav{
+    text-align: center;
+}
+
+h1{
+    font-size: 150px;
+    color: rgb(38, 149, 82);
+    box-shadow: 40px 30px 20px rgb(11, 181, 135), 40px 30px, 20px rgb(93, 220, 125);
+    text-shadow: 4px 4px 4px rgb(110, 255, 224);
+
+}
+h2{
+    background-color: rgb(0, 166, 255);
+    display: inline-block;
+    box-sizing: border-box;
+    color: #000;
+    position: fixed;
+    text-align: center;
+    margin-left: 500px;
+    margin-bottom: 500px;
+    
+}
+h2 :hover{
+    color: rgb(180, 44, 128);
+}
+
+h2 :hover{
+    background-color: rgb(218, 125, 3);
+    color: rgb(228, 216, 38);
+}
+
+.lista{
+    background-color: rgb(73, 37, 119);
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 2rem;
+    list-style-type: none;
+    padding: 0px;
+    width: 90%;
+    margin: auto;
+}
+.list .lis{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.list .lis{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+.list .lis:hover{
+    color: rgb(23, 29, 34);
+}
+.list .lis:hover{
+    background-color: rgb(75, 74, 74);
+    color: rgba(227, 193, 24, 0.915);
+}
+.list a{
+    background-color: rgb(10, 94, 25);
+    color: rgb(153, 153, 27);
+}
+
+
+.section1{
+    background-image: url(https://www.racketclub.com/es/images/secciones/3/img0000.jpg);
+    height: 500px;
+    width: 1220px;
+    padding: 20px;
+    padding-left: 100px;
+    margin: auto;
+    
+} 
+
+
+h3{
+    font-size: 20px;
+    font-family: cursive;
+    color: #000;
+    background-color: rgb(201, 133, 133);
+    color: rgb(0, 0, 0);
+    opacity: .5;
+}
+
+h3 :hover{
+    color: #000;
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+h3 :hover{
+    background-color: rgb(33, 25, 36);
+    color: rgb(255, 241, 241);
+}
+
+h4{
+    font-size: 2rem;
+    font-style: unset;
+    color: rgb(232, 214, 21);  box-shadow: 40px 30px 20px rgb(0, 142, 189), 40px 30px, 20px rgb(163, 184, 101);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+
+}
+
+.tip{
+    padding: 0%;
+    margin: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgb(5, 43, 30);
+    background-color: rgb(43, 137, 105);
+    color: rgb(122, 255, 122);
+}
+.tipi{
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgb(16, 114, 80);
+    font-size: 1rem;
+    background-color: rgb(233, 142, 31);
+    color: #000;
+
+}
+
+.ti{
+    margin: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgb(1, 74, 50);
+    background-color: rgb(0, 141, 37);
+    color: rgb(142, 237, 175);
+}
+
+.pel{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 184, 98);
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+.pel .pe{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+.pel .pe:hover{
+color: rgb(1, 199, 83);
+text-decoration: none;
+}
+.pel .pe:hover{
+    background-color: rgb(0, 124, 81);
+    color: rgb(255, 186, 37);
+}
+
+h5{
+    font-size: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(63, 220, 231);
+}

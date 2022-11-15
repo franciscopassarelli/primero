@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(194, 91, 12);
+   background-image: url(https://img.freepik.com/vector-gratis/fondo-arco-iris-degradado_1159-31590.jpg?w=2000);
+    }
+    
+    nav{
+        text-align: left;
+     
+        }
+    
+    h1{
+        font-size: 150px;
+        box-shadow: 30px 20px 10px goldenrod, 30px 20px, 10px cornsilk;
+        text-shadow: 3px 3px 3px goldenrod;
+    }
+    h2{
+        font-size: 50px;
+        box-shadow: 30px 20px 10px gold, 30px 20px 10px coral;
+        text-shadow: 3px 3px px goldenrod;
+    }
+
+    .hoom{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgba(190, 111, 0, 0.959);
+        font-size: 1rem;
+        list-style-type: none;
+        padding: 20px;
+        margin: 50px;
+        text-align: right;
+        
+    }
+
+    .hoom .club{
+        box-sizing: border-box;
+        border: 10px;
+        color: rgb(0, 0, 0);
+        position: relative;
+        font-size: 2rem;
+        display: inline-block;
+        margin: 20px;;
+    }
+    .hoom a{
+        background-color: rgb(190, 153, 18);
+        color: rgb(25, 25, 14);
+
+         }
+
+    .busque{
+        box-sizing: border-box;
+        border: 10px inset goldenrod;
+        color: rgb(31, 31, 31);
+        background-color: rgba(30, 31, 31, 0.519);
+        font-size: 20px;
+        margin-bottom: 30px;
+        display: block;
+    }
+    .lore{
+        margin: auto;
+        margin-top: 50px;
+        border: 10px solid rgb(149, 119, 43);
+        background: rgb(176, 104, 2)
+        width: 50%
+    }
+
+    .lore{
+        width: 50%;
+
+    }
+      
+   .lore img{
+        float: left;
+    }
+.menus{
+display: inline-block;    
+box-sizing: border-box;
+border: 5px outset goldenrod;
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(211, 173, 0);
+list-style-type: none;
+}
+.menus .men{
+padding-right: 200px;
+display: inline-block;
+position: relative;
+font-size: 2rem;
+text-align: center;
+box-sizing: border-box;
+border: 5px rgb(241, 79, 10);
+
+}
+.menus .men:hover{
+color: goldenrod;
+}
+
+.menus .men:hover{
+    background-color: gold;
+    color: rgb(189, 122, 29);
+}
+
+
+.mun{
+margin: auto;
+margin-top: 50px;
+border: 10px solid gold;
+background: rgb(176, 104, 2)
+width: 50%;
+}
+
+    .mun{
+        width: 50%;
+
+    }
+      
+   .mun fit{
+        float: left;
+    }
+    .tab{
+        display: inline-block;    
+        box-sizing: border-box;
+        border: 5px outset rgb(16, 66, 69);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(31, 169, 132);
+        list-style-type: none;
+        }
+        .tab .fet{
+        padding-right: 200px;
+        display: inline-block;
+        position: relative;
+        font-size: 2rem;
+        text-align: center;
+        box-sizing: border-box;
+        border: 5px rgb(25, 84, 79);
+        
+        }
+        .tab .fet:hover{
+        color: rgb(4, 23, 29);
+        }
+        
+        .tab .fet:hover{
+            background-color: rgb(0, 85, 96);
+            color: rgb(7, 13, 16);
+        }
+        
+
+
+    .cont{
+        margin: auto;
+        margin-top: 50px;
+        border: 10px solid rgb(0, 85, 95);
+        background: rgb(6, 164, 161)
+        width: 50%
+    }
+
+    .cont{
+        width: 50%;
+
+    }
+      
+   .cont spaa{
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        width: 300px;
+        margin-right: 18px;
+    }
+    
+    .ite{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(134, 87, 0);
+        color: rgb(22, 22, 21);
+        list-style-type: none;
+        text-align: center;
+        padding: 0px;
+    }
+    .ite .ite1{
+        display: inline-block;
+        position: relative;
+        font-size: 2rem;
+        padding-left: 150px;
+        padding-right: 150px;
+        
+    }
+    .ite .ite1:hover{
+    color: rgb(173, 81, 0);
+    text-decoration: none;
+    }
+    .ite .ite1:hover{
+        background-color: rgb(211, 174, 27);
+        color: rgb(232, 200, 72);
+    }
+    
+    

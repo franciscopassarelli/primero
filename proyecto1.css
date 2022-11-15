@@ -1,0 +1,223 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+
+
+body{
+    background-image: url(https://www.cronista.com/files/image/419/419347/61d4ec4d0592d.jpg);
+}
+
+
+nav{
+    text-align:center;
+ 
+    }
+
+h1{
+    font-size: 150px;
+    box-shadow: 30px 20px 10px goldenrod, 30px 20px, 10px cornsilk;
+    text-shadow: 3px 3px 3px goldenrod;
+}
+.ran{
+    border-radius: 2em;
+    box-shadow: 10px 5px 5px rgb(16, 16, 16), 10px 10px 5px rgb(15, 13, 13);
+
+    display: inline-block;
+    padding: auto;
+    margin-right: 1250px;
+    box-sizing: border-box;
+    border: 5px double rgb(214, 155, 5);
+    border-radius: 20px;
+    border-color: rgb(189, 162, 92);
+    font-size: 25px;
+    background-color: rgb(70, 63, 42);
+    list-style-type: none;
+    text-align: right;
+
+}
+.ran .ranking{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+
+
+}
+.menu{
+    box-sizing: border-box;
+    border: 5px outset goldenrod;
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(54, 54, 54);
+list-style-type: none;
+padding: 0px;
+width: 90%;
+margin: auto;
+}
+.menu .item{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.menu .item a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+.menu .item a:hover{
+    color: rgb(23, 29, 34);
+}
+.menu .item:hover a{
+    background-color: rgb(75, 74, 74);
+    color: rgba(227, 193, 24, 0.915);
+}
+.par{
+    box-sizing: border-box;
+    border: 5px double goldenrod;
+    border-radius: 20px;
+    border-color: rgb(0, 185, 242);
+    font-size: 2rem;
+    background-color: rgb(6, 87, 94);
+    list-style-type: none;
+    text-align: center;
+    
+}
+.par .parrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+
+}
+
+
+.submenu{
+    box-sizing: border-box;
+    border: 5px inset goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(62, 62, 62);
+    list-style-type: none;
+    padding: auto;
+    display: inline-block;
+    margin-left: 1170px;
+
+}
+.submenu .sub{
+
+
+display: inline-block;
+position: relative;
+font-size: 3rem;
+text-align: center;
+}
+
+.submenu .sub:hover{
+    color: rgb(62, 62, 62);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px;
+}
+.submenu .sub:hover{
+    color: rgb(32, 19, 19);
+}
+.submenu .sub:hover{
+    background-color: rgb(48, 48, 48);
+    color: rgb(222, 192, 1);
+}
+
+.correr{
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.correr2{
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.buscador{
+    box-sizing: border-box;
+    border: 10px inset goldenrod;
+    color: rgb(31, 31, 31);
+    background-color: rgba(30, 31, 31, 0.519);
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+
+.item-2{
+    box-sizing: border-box;
+    border: 5px dashed goldenrod;
+    display: block;
+    background-color: rgb(54, 54, 54);
+    list-style-type: none;
+    padding: 0px;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+}
+.item-2 .item2{
+  position: relative;
+    font-size: 2rem;
+    
+
+    
+
+}
+.item-2 .item2:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+
+
+
+    
+}
+.item-2 .item2:hover{
+    background-color: rgb(78, 78, 78);
+    color: rgb(182, 119, 19);
+    
+}
+
+.item-3{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(80, 80, 80);
+    color: rgb(224, 187, 67);
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    
+
+
+}
+.item-3 .item3{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+.item-3 .item3:hover{
+color: rgb(30, 164, 0);
+text-decoration: none;
+}
+.item-3 .item3:hover{
+    background-color: rgb(205, 164, 1);
+    color: black;
+}
+
+
+
+
+

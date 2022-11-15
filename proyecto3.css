@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(26, 19, 53); 
+ 
+
+}
+
+nav{
+    text-align: center;
+}
+
+h1{
+    font-size: 150px;
+    color: rgb(32, 4, 91);
+    box-shadow: 40px 30px 20px rgb(158, 126, 227), 40px 30px, 20px rgb(152, 181, 224);
+    text-shadow: 4px 4px 4px rgb(54, 0, 215);
+}
+.lista{
+
+    background-color: rgb(140, 119, 168);
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0px;
+    width: 90%;
+    margin: auto;
+}
+.lista .lis a{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.lista .lis{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 20px;
+}
+.lista .lis:hover{
+    color: rgb(23, 29, 34);
+}
+.lista .lis:hover{
+    background-color: rgb(197, 160, 209);
+    color: rgba(233, 199, 28, 0.915);
+}
+
+.otras{ 
+    margin-left: 75px;
+    box-sizing: border-box;
+    border: 10px inset rgb(3, 50, 116);
+    color: rgb(0, 138, 192);
+    background-color: rgba(0, 0, 0, 0.519);
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
+
+}
+
+.medidas{
+    box-sizing: border-box;
+    border: 10px inset rgb(3, 50, 116);
+    color: rgb(0, 138, 192);
+    background-color: rgba(0, 0, 0, 0.519);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    display: block;
+    margin-right: 1300px;
+}
+
+.medidas .med{
+    color: rgb(63, 62, 62);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+.medidas .med:hover{
+    color: rgb(23, 29, 34);
+}
+.medidas .med:hover{
+    background-color: rgb(75, 74, 74);
+    color: rgba(227, 193, 24, 0.915);
+}
+h2{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    box-sizing: border-box;
+    border: 5px double rgb(3, 50, 116);
+    color: rgb(112, 129, 137);
+    background-color: rgba(6, 19, 137, 0.519);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    display: block;
+    margin-right: 1300px;
+}
+h3{
+    text-align: center;
+    box-sizing: border-box;
+    border-style: groove;
+    color: rgb(6, 25, 35);
+    display: block;
+    padding-left: 332px;
+    padding-right: 332px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    background-color: rgb(16, 24, 48);
+    color: rgb(51, 65, 95);
+}
+
+.video{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border: 4px solid rgb(0, 35, 78);
+    background: rgb(2, 13, 34)
+    width: 50%
+}
+
+.video{
+    width: 50%;
+}
+  
+.video .vid{
+  float: left;
+ }
+
+ .imag .im{
+    width: 300px;
+    height: 300px;
+ }
+  
+  
+ .pelota{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(62, 0, 104);
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+.pelota .pel{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+.pelota .pel:hover{
+color: rgb(32, 0, 62);
+text-decoration: none;
+}
+.pelota .pel:hover{
+    background-color: rgb(59, 59, 59);
+    color: rgb(212, 248, 10);
+}
+
+h5{
+    font-size: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(72, 72, 72);
+}
+
