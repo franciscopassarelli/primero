@@ -7,64 +7,39 @@
         background-color: rgb(194, 91, 12);
    background-image: url(https://img.freepik.com/vector-gratis/fondo-arco-iris-degradado_1159-31590.jpg?w=2000);
     }
+
+    html{
+        width: 100%;
+    }
     
-    nav{
-        text-align: left;
-     
-        }
     
+  
     h1{
-        font-size: 150px;
-        box-shadow: 30px 20px 10px goldenrod, 30px 20px, 10px cornsilk;
-        text-shadow: 3px 3px 3px goldenrod;
-    }
-    h2{
-        font-size: 50px;
-        box-shadow: 30px 20px 10px gold, 30px 20px 10px coral;
-        text-shadow: 3px 3px px goldenrod;
-    }
-
-    .hoom{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: rgba(190, 111, 0, 0.959);
-        font-size: 1rem;
-        list-style-type: none;
-        padding: 20px;
-        margin: 50px;
-        text-align: right;
-        
-    }
-
-    .hoom .club{
-        box-sizing: border-box;
-        border: 10px;
-        color: rgb(0, 0, 0);
-        position: relative;
-        font-size: 2rem;
         display: inline-block;
-        margin: 20px;;
+        background-color: gold;
+        padding-top: 40px;
+        font-size: 60px;
     }
-    .hoom a{
-        background-color: rgb(190, 153, 18);
-        color: rgb(25, 25, 14);
 
-         }
+  
+        
 
     .busque{
+        display: flex;
         box-sizing: border-box;
         border: 10px inset goldenrod;
         color: rgb(31, 31, 31);
         background-color: rgba(30, 31, 31, 0.519);
         font-size: 20px;
         margin-bottom: 30px;
-        display: block;
+        
     }
     .lore{
         margin: auto;
         margin-top: 50px;
         border: 10px solid rgb(149, 119, 43);
         background: rgb(176, 104, 2)
-        width: 50%
+    
     }
 
     .lore{
@@ -107,7 +82,7 @@ color: goldenrod;
 margin: auto;
 margin-top: 50px;
 border: 10px solid gold;
-background: rgb(176, 104, 2)
+background: rgb(176, 104, 2);
 width: 50%;
 }
 
@@ -152,7 +127,7 @@ width: 50%;
         margin: auto;
         margin-top: 50px;
         border: 10px solid rgb(0, 85, 95);
-        background: rgb(6, 164, 161)
+        background: rgb(6, 164, 161);
         width: 50%
     }
 
@@ -194,4 +169,102 @@ width: 50%;
         color: rgb(232, 200, 72);
     }
     
+    h5{
+        background-color: black;
+        padding: auto;
+    }
+
+    .lis:hover{
+        background-color: gold;
+    }
+    .grid-container{ 
+        display: grid;
+        gap:10px;
+        grid-template-areas: 
+        "header"
+        "navbar"
+        "sidebar"
+        "main"
+        "footer" ;
+    }
+    
+    .header{
+        grid-area: header;
+    }
+    
+    .navbar{
+        grid-area: navbar;
+    
+    }
+    
+    .sidebar{
+        grid-area: sidebar;
+    }
+    
+    .footer{
+        grid-area: footer;
+    }
+    
+    
+    @media only screen and (max-width: 480px){
+        body{
+            background: chocolate;
+        }
+        h1{
+            background-color: rgb(225, 192, 72);
+            display: inline-block;
+            text-align: center;
+        }
+        .grid-container{
+            display: grid;
+            gap:10px;
+            grid-template-areas: 
+            "header"
+            "navbar"
+            "sidebar"
+            "main"
+            "footer";
+        }
+        .header{
+            grid-area: header;
+        }
+        
+        .navbar{
+            grid-area: navbar;
+        
+        }
+        
+        .sidebar{
+            grid-area: sidebar;
+
+    
+
+        }
+       
+         .lore{
+                width: auto;
+        
+            }
+            .mun{
+                width: auto;
+            }
+            .cont{
+                width: auto;
+            }
+              
+        
+        }
+        .main{
+            grid-area: main;
+        
+        }
+        
+        .footer{
+            grid-area: footer;
+        
+        }
+    
+        
+        
+
     

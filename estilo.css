@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(164, 144, 11);
+    min-height: 100%;
+}
+
+h1{
+    font-size: 150px;
+    color: rgb(227, 85, 3);
+    box-shadow: 40px 30px 20px rgb(23, 3, 3), 40px 30px, 20px rgb(230, 161, 0);
+    text-shadow: 4px 4px 4px rgb(28, 16, 4);
+    text-align: center;
+    animation:3s;
+}
+
+h2{
+    display: flex;
+    text-align: center;
+    background-color: rgb(3, 73, 91);
+}
+
+.anchoTable{
+    width: 400px;
+    background-color: rgb(60, 47, 0);
+}
+.anchoTable2{
+    width: 400px;
+    background-color: rgb(216, 150, 64);
+    
+}
+
+.lis:hover{
+    background-color: gold;
+    border-radius: 10%;
+}
+.acordi{
+    background-color:rgb(241, 226, 54);
+}
+.acordi2{
+    background-color: rgb(217, 124, 10);
+}
+.acordi3{
+    background-color: rgb(182, 32, 32);
+}
+
+
+.grid-container{
+    display: grid;
+    gap:10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "sidebar"
+    "footer" ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.navbar{
+    grid-area: navbar;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+@media only screen and (min-width: 480px){
+    .grid-container{
+        background-color: rgb(171, 194, 0);
+        
+    }
+    h1{
+        color: rgb(131, 12, 12);
+        font-style: italic;
+    }
+}

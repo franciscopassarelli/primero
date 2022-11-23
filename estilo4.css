@@ -29,7 +29,6 @@ h2{
     position: fixed;
     text-align: center;
     margin-left: 500px;
-    margin-bottom: 500px;
     
 }
 h2 :hover{
@@ -42,6 +41,7 @@ h2 :hover{
 }
 
 .lista{
+    
     background-color: rgb(73, 37, 119);
     box-sizing: border-box;
     display: inline-block;
