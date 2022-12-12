@@ -1,0 +1,24 @@
+@mixin cuadrado($fondo, $ancho,$letrag,$stilo,$color){ 
+
+    background-color: $fondo;
+    width: $ancho;
+    font-weight: $letrag;
+    font-style:$stilo;
+    color:$color;
+
+    
+    }
+
+    
+    .header{
+        @include cuadrado();
+    }
+    
+    .aside{
+        @include cuadrado();
+    }
+    
+    .footer{
+        @include cuadrado();
+    }
+    

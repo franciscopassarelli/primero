@@ -1,93 +1,64 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: blueviolet;
+  min-height: 100%; }
 
-}
-html{
-    height: 100%;
-}
-body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(164, 144, 11);
-    min-height: 100%;
-}
+.dropdown-menu {
+  background-color: #424141; }
 
-h1{
-    font-size: 150px;
-    color: rgb(227, 85, 3);
-    box-shadow: 40px 30px 20px rgb(23, 3, 3), 40px 30px, 20px rgb(230, 161, 0);
-    text-shadow: 4px 4px 4px rgb(28, 16, 4);
-    text-align: center;
-    animation:3s;
-}
+.navbar .lis:hover {
+  background-color: gold;
+  border-style: dashed; }
 
-h2{
-    display: flex;
-    text-align: center;
-    background-color: rgb(3, 73, 91);
-}
+.sidebar__h2 {
+  display: flex;
+  text-align: center;
+  background-color: #066086; }
 
-.anchoTable{
-    width: 400px;
-    background-color: rgb(60, 47, 0);
-}
-.anchoTable2{
-    width: 400px;
-    background-color: rgb(216, 150, 64);
-    
-}
+.sidebar .anchoTable {
+  width: 400px;
+  background-color: #8d0606; }
 
-.lis:hover{
-    background-color: gold;
-    border-radius: 10%;
-}
-.acordi{
-    background-color:rgb(241, 226, 54);
-}
-.acordi2{
-    background-color: rgb(217, 124, 10);
-}
-.acordi3{
-    background-color: rgb(182, 32, 32);
-}
+.sidebar .anchoTable2 {
+  width: 400px;
+  background-color: orange; }
 
+.acordi {
+  background-color: yellow; }
 
-.grid-container{
-    display: grid;
-    gap:10px;
-    grid-template-areas: 
-    "header"
-    "navbar"
-    "sidebar"
-    "footer" ;
-}
+.acordi2 {
+  background-color: gold; }
 
-.header{
-    grid-area: header;
-}
+.acordi3 {
+  background-color: #8d0606; }
 
-.navbar{
-    grid-area: navbar;
+.footer .lis:hover {
+  background-color: gold;
+  border-style: dashed; }
 
-}
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header"
+ "navbar"
+ "sidebar"
+ "footer"; }
 
-.sidebar{
-    grid-area: sidebar;
-}
+.header {
+  grid-area: header; }
 
-.footer{
-    grid-area: footer;
-}
+.navbar {
+  grid-area: navbar; }
 
+.sidebar {
+  grid-area: sidebar; }
 
-@media only screen and (min-width: 480px){
-    .grid-container{
-        background-color: rgb(171, 194, 0);
-        
-    }
-    h1{
-        color: rgb(131, 12, 12);
-        font-style: italic;
-    }
-}
+.footer {
+  grid-area: footer; }
+
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    background-color: gold; }
+  h1 {
+    color: #8d0606;
+    font-style: italic; } }

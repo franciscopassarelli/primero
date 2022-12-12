@@ -4,81 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="club de tenis,raquetas,clases de tenis, gimnasios y spá, indumentaria de tenis">
+    <meta name="description" content="somos mas que un club de tenis, con el fin de que nuestros alumnos aprovechen a un maximo los recursos del tenis">
+    <meta name="author" content="francisco nicolás passarelli">
+    <meta name="copyright" content="facebook inc. , instagram">
     <title>Bienvenida al club!</title>
     <link rel="stylesheet" href="estilo4.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header class="navBack">
-        <div id="top" ></div>
-        <nav>
-          <section>
-            <h1>Bienvenida Al Club!</h1>
-
-                     <ul class="list">
-                <li class="lis">Inscripciones</li>
-                <li class="lis">Escuelita</li>
-                <li class="lis">Academia</li>
-                <li class="lis">Clases Part</li>
-                <li class="lis"> <a href="index.html">Volver a Deportenis</a></li>
-            </ul>
-
-            <h2>SORTEO FIN DE AÑO!<p>click aqui!</p></h2>
-
-           </section>
-
-        
-           <h4>Registrate!</h4>
-           <div>
-         <form>
-           <input class="tip" type="text" value="nombre"><br>
-           <input class="tip" type="text" value="apellido"><br>
-           <input class="tip" type="text" value="documento"><br>
-           <input class="tip" type="email" value="e-mail"><br><br>
-           <input class="tipi" type="button" value="enviar"><br>
-        </form>
-        </div>
-           <div>
-               <h4>Ingreso Socio</h4>
-            <div>
-           <form>
-               <input class="ti" type="email" value="e-mail"><br>
-               <input class="ti" type="password" value="contraseña"><br><br>
-               <input class="tipi" type="button" value="ingresar"><br>
-           </form>
-           </div>
-
-          <section class="section1">
-
-
-     <section> 
-        
-            <h3>Nuestro Club<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem culpa maxime placeat sint hic, eveniet inventore ad, necessitatibus totam rem soluta quidem! Molestiae adipisci, consequuntur recusandae tempora quisquam rerum aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloremque iure vitae, repellendus voluptatibus ipsam cupiditate recusandae ipsa officiis eaque! Quidem odit earum, unde quam dolore nemo culpa possimus pariatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur animi enim eum quisquam sed asperiores modi eos illo delectus nam error assumenda possimus nemo, sequi aspernatur eius officiis repellat a? </p></h3>
-            
-            </section>
-            </section>
-
-        </nav>
-    
-    </header>
-    <main>
-      
-  
-
-
-
-    </main>
-    <footer>
-        <div>
-            <ul class="pel">
-                <li class="pe">mas info</li>
-                <li class="pe">sobre nosotros</li>
-                <li class="pe">seguinos aca!</li>
-        
-            </ul>
+    <header>
+        <div id="top"></div>
+          <nav class="navbar bg-success fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">bienvenida al club</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="nave offcanvas-header">
+                  <h5 class="dep offcanvas-title" id="offcanvasNavbarLabel">deportenis</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="can offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="men nav-link active" aria-current="page" href="#">inscripciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="men nav-link" href="#">contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="men nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        nuestra academia
+                      </a>
+                      <ul class="menos dropdown-menu">
+                        <li><a class="men dropdown-item" href="#">escuelita de tenis</a></li>
+                        <li><a class="men dropdown-item" href="#">clases particulares</a></li>
+                        <li><a class="men dropdown-item" href="#">academia de tenis avanzada</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="men dropdown-item" href="index.html">volver a deportenis</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="busqueda" aria-label="">
+                    <button class="men btn btn-outline-success" type="submit">enviar</button>
+                  </form>
+                </div>
+              </div>
             </div>
+          </nav>
+          </header>
 
+        <main>
+           <h4>
+           <span> selecciona tu tenista favorito</span>
+         </h4>
+      
+         <div class="cards-grid">
+             <div class="flip-card">
+                 <div class="flip-card-inner">
+                     <div class="flip-card-front" style="background-image: url(https://cdn2.excelsior.com.mx/media/styles/grande/public/pictures/2022/09/05/2817441.jpg);">
+                     </div>
+                     <div class="flip-card-back">
+                         Rafael Nadal Parera, más conocido como Rafa Nadal, es un tenista profesional español que ocupa la segunda posición del ranking ATP.​Está considerado como el mejor tenista de la historia en pistas de tierra batida​​​ y uno de los mejores de todos los tiempos.​​​​​​
+                     </div>
+                 </div>
+             </div>
 
-    <h5>Todos los derechos reservados R®</h5>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front" style="background-image: url(https://fotos.perfil.com/2022/07/05/trim/950/534/novak-djokovic-1381927.jpg);">
+
+                  </div>
+                  <div class="flip-card-back">
+                      Novak Djokovic es un tenista profesional serbio que ocupa la quinta posición del ranking ATP. Es considerado como el mejor tenista de toda la historia en pista dura y uno de los mejores de todos los tiempos.​​​​ 
+                  </div>
+              </div>
+             </div>
+     
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url(https://media.revistagq.com/photos/5d1f1a3d6994dccdc3778242/3:4/w_2025,h_2700,c_limit/Roger-Federer.jpg);"></div>
+                    
+                    <div class="flip-card-back">
+                        Roger Federer es un extenista profesional suizo. Está considerado como el mejor tenista de toda la historia en pistas de hierba​​​ y uno de los mejores de todos los tiempos.
+                    </div>
+                </div>
+            </div>
+        
+      
+         
+      
+</main>
+          <section class="section1">
+     <section> 
+    
+        
+            <h3> <p> Nuestro Club </p> <p>Conoce los beneficios del tenis para la salud, y también sus riesgos
+              Federer, Nadal y Djokovic han escrito en las últimas décadas muchas de las gestas deportivas más impresionantes hasta hacer del tenis uno de los deportes más populares. Muchos niños, jóvenes y mayores han descubierto las ventajas físicas, sociales y mentales de un deporte que se puede practicar, en familia o con amigos, desde los tres años y hasta muy entrada la edad anciana.</p><p>Un estudio de la revista médica Mayo Clinic Proceedings, publicado en 2018, concluye que el tenis es el deporte que se puede realizar con más edad. Según el trabajo, realizado sobre más de 8.000 deportistas que se analizaron durante 25 años, la práctica habitual del tenis alarga la vida de quien lo practica en 9 años. Para que esto sea posible, hay que acompañarlo de una nutrición adecuada, una revisión cardíaca y controlar el sueño y el estrés</p></h3>
+            </section>
+            </section>
+
+    <div class="cartel"> <p> SORTEO FIN DE AÑO!<p>click aqui!</p></div>
+    
+    <footer>
+            <div class="container-fluid">
+         
+                <div class="row p-5 bg-dark text-white">
+        
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h3">deportenis</p>
+                    <p class="men text-secondary">tenis, pro.</p>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-2">tienda online</p>
+                    <div class="mb-2">
+                      <a class="men text-secondary text-decoration-none" href="#">creditos</a>
+                    </div>
+                      <div class="mb-2">
+                        <a class="men text-secondary text-decoration-none" href="#">promociones</a>
+                        </div>
+                        <div class="mb-2">
+                      <a class="men text-secondary text-decoration-none" href="#">consultas de cuenta</a>
+                    </div>
+                    <div class="mb-2">
+                      <a class="men text-secondary text-decoration-none" href="#">quienes somos</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">links</p>
+                    <div class="mb-2">
+                      <a class="men text-secondary text-decoration-none" href="#">instagram</a>
+                    </div>
+                    <div class="mb-2">
+                      <a class="men text-secondary text-decoration-none" href="#">facebook</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">contacto</p>
+                    <div class="mb-2">
+                      <a class="men text-secondary text-decoration-none" href="#">mas ayuda</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <p class="text-white text-center">Copiright - todos los derechos reservados ®2022</p>
+                  </div>
+                </div>
     <a href="#top">
         <h5>Ir al Top</h5></a>
         </footer>
