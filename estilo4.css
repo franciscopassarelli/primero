@@ -6,12 +6,42 @@
 }
 body{
     background-image: url(https://thumbs.dreamstime.com/b/tennis-ball-court-line-off-center-9205576.jpg);
-    
+    width: 100%;
 
 }
+.navbar-brand{
+    color: rgb(51, 7, 226);
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+ }
+@keyframes animacion{
+        50%{ 
+            transform:scale(.3);
+            animation-duration: infinite;
+            transition-duration: infinite;
+            color: rgb(85, 0, 182);
+            
+    }
+    
+}
+.container-fluid{
+    background: linear-gradient(rgb(1, 93, 1), rgb(104, 228, 104), rgb(138, 211, 138));
+ }
 
-nav{
-    text-align: center;
+.can{
+    background: linear-gradient(rgb(1, 93, 1), rgb(104, 228, 104), rgb(138, 211, 138));
+}
+
+.menos{
+    background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
+}
+
+.men:hover{
+    background: linear-gradient(rgb(0, 131, 0),rgb(145, 251, 145));
+
 }
 
 h1{
@@ -21,21 +51,40 @@ h1{
     text-shadow: 4px 4px 4px rgb(110, 255, 224);
 
 }
-h2{
-    background-color: rgb(0, 166, 255);
+.bot:hover{
+    background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
+    
+}
+.logo{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}
+.nave{
+
+     background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
+}
+.dep{
+    background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
+    color: #000;
+}
+.cartel{
+    background-color: rgb(2, 38, 57);
     display: inline-block;
     box-sizing: border-box;
     color: #000;
     position: fixed;
     text-align: center;
-    margin-left: 500px;
+    
+    
+    
     
 }
-h2 :hover{
+.cartel :hover{
     color: rgb(180, 44, 128);
 }
 
-h2 :hover{
+.cartel :hover{
     background-color: rgb(218, 125, 3);
     color: rgb(228, 216, 38);
 }
@@ -82,7 +131,7 @@ h2 :hover{
 .section1{
     background-image: url(https://www.racketclub.com/es/images/secciones/3/img0000.jpg);
     height: 500px;
-    width: 1220px;
+    width: 1221px;
     padding: 20px;
     padding-left: 100px;
     margin: auto;
@@ -92,22 +141,23 @@ h2 :hover{
 
 h3{
     font-size: 20px;
-    font-family: cursive;
+    color: rgb(245, 214, 214);
+    background-color: rgb(30, 26, 26);
     color: #000;
-    background-color: rgb(201, 133, 133);
-    color: rgb(0, 0, 0);
     opacity: .5;
 }
 
 h3 :hover{
-    color: #000;
+    color: rgb(218, 198, 198);
     font-family: cursive;
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 h3 :hover{
-    background-color: rgb(33, 25, 36);
-    color: rgb(255, 241, 241);
+    background-color: rgb(251, 243, 254);
+    color: rgb(8, 2, 2);
+    font-family: 30px;
+    
 }
 
 h4{
@@ -173,9 +223,90 @@ text-decoration: none;
     background-color: rgb(0, 124, 81);
     color: rgb(255, 186, 37);
 }
+.lis:hover{
+    background-color: rgb(41, 116, 6);
+
+}
 
 h5{
     font-size: 2rem;
     background-color: rgb(0, 0, 0);
     color: rgb(63, 220, 231);
 }
+
+main{
+    color: #2a2929;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  
+  h4 span {
+    font-size: 4rem;
+    color: rgb(101, 101, 152);
+    margin-top: 0;
+    margin-bottom: 80px; 
+
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+ }
+@keyframes animacion{
+        50%{ 
+            transform:scale(.3);
+            animation-duration: infinite;
+            transition-duration: infinite;
+            box-shadow: inset;
+            color: rgb(0, 170, 133);
+            
+    }
+}
+     
+  
+  p {
+    margin: 0; }
+  
+  .cards-grid {
+    display: flex;
+    grid-gap: 80px; }
+  
+  /* FLIP CARD */
+  .flip-card {
+    width: 320px;
+    height: 504px;
+    perspective: 2000px; }
+    .flip-card-inner {
+      margin-left: -200px;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      box-shadow:(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
+      border-radius: 28px;
+      transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+      transform-style: preserve-3d; }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 28px;
+      backface-visibility: hidden; }
+    .flip-card-front {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .flip-card-back {
+      font-size: 1.25rem;
+      text-align: center;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+      background-color: gray;
+      transform: rotateY(180deg); }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(-180deg); }
+  
+    

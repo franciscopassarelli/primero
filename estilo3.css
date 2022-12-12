@@ -4,54 +4,61 @@
     box-sizing: border-box;
    
 }
-
-body{
-    background-color: rgb(26, 19, 53); 
- 
-
+html{
+    height: 100%;
 }
 
-nav{
-    text-align: center;
+body{
+    background-image: radial-gradient(circle at 53.99% 4.41%, #003530 0, #00353e 3.33%, #00354b 6.67%, #003557 10%, #003563 13.33%, #00356e 16.67%, #003477 20%, #00337e 23.33%, #003284 26.67%, #003087 30%, #002e89 33.33%, #002a88 36.67%, #002585 40%, #001e81 43.33%, #00157a 46.67%, #250572 50%, #3e0068 53.33%, #4f005d 56.67%, #5a0052 60%, #630045 63.33%, #690038 66.67%, #6d002c 70%, #6e0020 73.33%, #6e0013 76.67%, #6d0000 80%, #6a0000 83.33%, #660000 86.67%, #620000 90%, #5c0000 93.33%, #560000 96.67%, #4f0d00 100%);
+ 
+min-height: 100%;
 }
 
 h1{
-    font-size: 150px;
-    color: rgb(32, 4, 91);
-    box-shadow: 40px 30px 20px rgb(158, 126, 227), 40px 30px, 20px rgb(152, 181, 224);
-    text-shadow: 4px 4px 4px rgb(54, 0, 215);
-}
-.lista{
-
-    background-color: rgb(140, 119, 168);
-    box-sizing: border-box;
-    display: inline-block;
-    font-size: 2rem;
-    padding: 0px;
-    width: 90%;
-    margin: auto;
-}
-.lista .lis a{
-    display: inline-block;
-    position: relative;
-    font-size: 2rem;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    font-size: 150px;
+    color: rgb(64, 52, 89);
+    box-shadow: 40px 30px 20px rgb(158, 126, 227), 40px 30px, 20px rgb(152, 181, 224);
+    text-shadow: 4px 4px 4px rgb(110, 72, 223);
+
+    animation-name: animar;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-direction: alternate;
+ }
+@keyframes animar{
+        0%{ 
+            transform:scale(.3);
+            text-shadow: 6px 6px 6px ;
+            color: rgb(145, 201, 241);
+            
+    }
 }
 
-.lista .lis{
-    color: rgb(0, 0, 0);
-    display: inline-block;
+
+.lista{
     padding: 20px;
+    background-color: black;
+
+    
 }
 .lista .lis:hover{
     color: rgb(23, 29, 34);
+
+
+
+
 }
 .lista .lis:hover{
-    background-color: rgb(197, 160, 209);
+    background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
     color: rgba(233, 199, 28, 0.915);
 }
+
+.lis:hover{
+    background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
+    border-style: unset;
+}
+
 
 .otras{ 
     margin-left: 75px;
@@ -66,108 +73,193 @@ h1{
 }
 
 .medidas{
-    box-sizing: border-box;
+
     border: 10px inset rgb(3, 50, 116);
-    color: rgb(0, 138, 192);
+    color: rgb(76, 4, 79);
     background-color: rgba(0, 0, 0, 0.519);
     font-size: 2rem;
-    margin-bottom: 30px;
-    display: block;
     margin-right: 1300px;
 }
 
 .medidas .med{
-    color: rgb(63, 62, 62);
+    color: rgb(67, 0, 105);
     text-decoration: none;
-    display: inline-block;
     padding: 20px;
 }
 .medidas .med:hover{
-    color: rgb(23, 29, 34);
+    color: rgb(137, 57, 203);
 }
 .medidas .med:hover{
-    background-color: rgb(75, 74, 74);
+    background-color: rgb(44, 4, 67);
     color: rgba(227, 193, 24, 0.915);
 }
 h2{
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
     font-style: italic;
     text-align: center;
     box-sizing: border-box;
-    border: 5px double rgb(3, 50, 116);
-    color: rgb(112, 129, 137);
-    background-color: rgba(6, 19, 137, 0.519);
+    border: 5px double rgb(33, 107, 211);
+    color: rgb(0, 0, 0);
+    background-color: rgba(68, 85, 237, 0.519);
     font-size: 2rem;
     margin-bottom: 30px;
-    display: block;
-    margin-right: 1300px;
+    animation-name: animacion;
+    animation-duration: 6s;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+ }
+@keyframes animacion{
+        50%{ 
+            transform:scale(.3);
+            animation-duration: infinite;
+            transition-duration: infinite;
+            background-color: rgb(51, 169, 215);
+    }
 }
-h3{
+
+
+h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     box-sizing: border-box;
-    border-style: groove;
-    color: rgb(6, 25, 35);
-    display: block;
-    padding-left: 332px;
-    padding-right: 332px;
-    padding-bottom: 20px;
-    font-size: 1rem;
-    background-color: rgb(16, 24, 48);
-    color: rgb(51, 65, 95);
+    border-style: outset;
+    color: rgb(103, 103, 103);
+    
+
 }
 
 .video{
-    display: block;
+    letter-spacing: 1px;
+    font-weight: 500;
     margin: auto;
     margin-top: 50px;
-    border: 4px solid rgb(0, 35, 78);
-    background: rgb(2, 13, 34)
-    object-fit: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(64, 0, 29);
+    border-style: outset; 
+    border-color: rgb(1, 22, 35);
+    background-image: radial-gradient(circle at 95.76% 50%, #025886 0, #0084a5 16.67%, #007da1 33.33%, #105670 50%, #163241 66.67%, #092e45 83.33%, #0b1834 100%);
+
+
     
 }
 
 .video{
     width: 50%;
+
 }
   
 .video .vid{
+ 
   float: left;
+  margin-right: 20px;
  }
+ 
 
  .imag .im{
     width: 300px;
     height: 300px;
+
  }
   
   
- .pelota{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(62, 0, 104);
-    color: rgb(0, 0, 0);
-    list-style-type: none;
-    text-align: center;
-    padding: 0px;
-}
-.pelota .pel{
-    display: inline-block;
-    position: relative;
-    font-size: 2rem;
-    padding-left: 150px;
-    padding-right: 150px;
-    
-}
-.pelota .pel:hover{
-color: rgb(32, 0, 62);
-text-decoration: none;
-}
-.pelota .pel:hover{
-    background-color: rgb(59, 59, 59);
-    color: rgb(212, 248, 10);
-}
+
 
 h5{
     font-size: 2rem;
     background-color: rgb(0, 0, 0);
     color: rgb(72, 72, 72);
 }
+
+
+
+
+
+.grid-container{ 
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "footer" ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+
+@media only screen and (max-width: 480px){  
+    body{
+        background: rgb(23, 7, 38);
+    }
+    h1{
+        text-shadow: #0010aa, blueviolet;
+        display: inline-block;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-style: italic;
+        font-family: 1rem;
+        
+    }
+    .grid-container{
+        display: grid;
+        
+    gap: 10px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    
+
+    .main{
+        grid-area: main;
+    
+    }
+
+    .aside{
+        grid-area: aside;
+        
+
+    }
+    
+    .footer{
+        grid-area: footer;
+        
+        
+
+    
+    }
+
+    .imag .im{
+        width: 250px;
+        height: 250px;
+
+    }
+
+ 
+
+ }
 

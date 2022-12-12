@@ -1,0 +1,113 @@
+$negro: black;
+$dorado: gold;
+$amarillo:yellow;
+$naranja:orange;
+$rojo:rgb(141, 6, 6);
+$blue:blueviolet;
+$aqua:rgb(6, 96, 134);
+$grey: rgb(66, 65, 65);
+
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: $blue;
+    min-height: 100% ;
+ }
+
+.header{
+ 
+    
+    .dropdown-menu{
+        background-color: $grey;
+    }
+
+    .navbar .lis:hover{
+        background-color: $dorado;
+        border-style: dashed;
+        
+    }
+ }
+
+
+
+.sidebar{
+    &__h2{
+        display: flex;
+    text-align: center;
+    background-color: $aqua;
+    }
+
+    .anchoTable{
+        width: 400px;
+        background-color: $rojo;
+    }
+    .anchoTable2{
+        width: 400px;
+        background-color: $naranja;
+        
+    }
+
+
+}
+
+.acordi{
+    background-color:$amarillo;
+}
+.acordi2{
+    background-color: $dorado;
+}
+.acordi3{
+    background-color: $rojo;
+}
+
+.footer{
+ 
+    .lis:hover{
+        background-color: $dorado;
+        border-style: dashed;
+
+    }
+}
+
+
+.grid-container{
+    display: grid;
+    gap:10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "sidebar"
+    "footer" ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.navbar{
+    grid-area: navbar;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width: 480px){
+    .grid-container{
+        background-color: $dorado;
+        
+    }
+    h1{
+        color: $rojo;
+        font-style: italic;
+    }
+}
+
+ 

@@ -4,6 +4,9 @@
     box-sizing: border-box;
     }
     body{
+        font-style: inherit;
+        font-weight: 500;
+        letter-spacing: 1px;
         background-color: rgb(194, 91, 12);
    background-image: url(https://img.freepik.com/vector-gratis/fondo-arco-iris-degradado_1159-31590.jpg?w=2000);
     }
@@ -49,6 +52,7 @@
       
    .lore img{
         float: left;
+        margin-right: 20px;
     }
 .menus{
 display: inline-block;    
@@ -86,13 +90,14 @@ background: rgb(176, 104, 2);
 width: 50%;
 }
 
-    .mun{
+.mun{
         width: 50%;
 
     }
       
-   .mun fit{
+.mun .fit{
         float: left;
+        margin-right: 20px;
     }
     .tab{
         display: inline-block;    
@@ -136,12 +141,11 @@ width: 50%;
 
     }
       
-   .cont spaa{
+   .cont .spaa{
     font-weight: 100;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        float: left;
-        width: 300px;
-        margin-right: 18px;
+    float: left;
+    margin-right: 20px;
     }
     
     .ite{
@@ -211,7 +215,7 @@ width: 50%;
             background: chocolate;
         }
         h1{
-            background-color: rgb(225, 192, 72);
+            background-color: rgb(228, 192, 62);
             display: inline-block;
             text-align: center;
         }
