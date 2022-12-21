@@ -1,0 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-style: inherit;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #c25b0c;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-arco-iris-degradado_1159-31590.jpg?w=2000); }
+
+html {
+  width: 100%; }
+
+.header .container-fluid {
+  background: linear-gradient(#015d01, #68e468, #8ad38a); }
+
+.header .can {
+  background: linear-gradient(#015d01, #68e468, #8ad38a); }
+
+.header .menos {
+  background: linear-gradient(#deb600, #e1d11f, #e7b570); }
+
+.header .men:hover {
+  background: linear-gradient(#b9c000, #ff2a00); }
+
+.header h1 {
+  display: inline-block;
+  background-color: gold;
+  padding-top: 40px;
+  font-size: 60px; }
+
+.sidebar .lore {
+  margin: auto;
+  margin-top: 50px;
+  border: 10px solid #95772b;
+  background: #b06802; }
+
+.sidebar .lore {
+  width: 50%; }
+
+.sidebar .lore img {
+  float: left;
+  margin-right: 20px; }
+
+.main .menus {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 5px outset goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d3ad00;
+  list-style-type: none; }
+
+.main .menus .men {
+  padding-right: 200px;
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  border: 5px #f14f0a; }
+
+.main .menus .men:hover {
+  color: goldenrod; }
+
+.main .menus .men:hover {
+  background-color: gold;
+  color: #bd7a1d; }
+
+.main .mun {
+  margin: auto;
+  margin-top: 50px;
+  border: 10px solid gold;
+  background: #b06802;
+  width: 50%; }
+
+.main .mun {
+  width: 50%; }
+
+.main .mun .fit {
+  float: left;
+  margin-right: 20px; }
+
+.main .tab {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 5px outset #104245;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1fa984;
+  list-style-type: none; }
+
+.main .tab .fet {
+  padding-right: 200px;
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  border: 5px #19544f; }
+
+.main .tab .fet:hover {
+  color: #04171d; }
+
+.main .tab .fet:hover {
+  background-color: #005560;
+  color: #070d10; }
+
+.main .cont {
+  margin: auto;
+  margin-top: 50px;
+  border: 10px solid #00555f;
+  background: #06a4a1;
+  width: 50%; }
+
+.main .cont {
+  width: 50%; }
+
+.main .cont .spaa {
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  float: left;
+  margin-right: 20px; }
+
+.main .ite {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #865700;
+  color: #161615;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px; }
+
+.main .ite .ite1 {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  padding-left: 150px;
+  padding-right: 150px; }
+
+.main .ite .ite1:hover {
+  color: #ad5100;
+  text-decoration: none; }
+
+.main .ite .ite1:hover {
+  background-color: #d3ae1b;
+  color: #e8c848; }
+
+.footer h5 {
+  background-color: black;
+  padding: auto; }
+
+.footer .lis:hover {
+  background-color: gold; }
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "navbar" "sidebar" "main" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.navbar {
+  grid-area: navbar; }
+
+.sidebar {
+  grid-area: sidebar; }
+
+.footer {
+  grid-area: footer; }
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: chocolate; }
+  h1 {
+    background-color: #e4c03e;
+    display: inline-block;
+    text-align: center; }
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header" "navbar" "sidebar" "main" "footer"; }
+  .header {
+    grid-area: header; }
+  .navbar {
+    grid-area: navbar; }
+  .sidebar {
+    grid-area: sidebar; }
+  .lore {
+    width: auto; }
+  .mun {
+    width: auto; }
+  .cont {
+    width: auto; } }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }

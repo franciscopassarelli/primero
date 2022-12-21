@@ -13,7 +13,7 @@
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="./css2/estilo2.css">
     <title>Home club</title>
 </head>
 <body class="grid-container">
@@ -30,25 +30,28 @@
                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">nuestro home club</h5>
                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                    </div>
-                   <div class="offcanvas-body">
+                   <div class="can offcanvas-body">
                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="men nav-link active" href="index.html">volver a deportenis</a>
+                      </li>
                        <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="#">contactanos</a>
+                         <a class="men nav-link active" aria-current="page" href="index3.html">tienda de tenis</a>
                        </li>
                        <li class="nav-item">
-                         <a class="nav-link" href="index.html">volver a deportenis</a>
+                         <a class="men nav-link" href="index4.html">bienvenida al club</a>
                        </li>
                        <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           boton
+                         <a class="men nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           menu
                          </a>
-                         <ul class="dropdown-menu dropdown-menu-dark">
-                           <li><a class="dropdown-item" href="#">nuestro buffet</a></li>
-                           <li><a class="dropdown-item" href="#">info spa y gym</a></li>
+                         <ul class="menos dropdown-menu dropdown-menu-dark">
+                           <li><a class="men dropdown-item" href="#buffet">nuestro buffet</a></li>
+                           <li><a class="men dropdown-item" href="#spa">spa y gym</a></li>
                            <li>
                              <hr class="dropdown-divider">
                            </li>
-                           <li><a class="dropdown-item" href="#">otras consultas</a></li>
+                           <li><a class="men dropdown-item" href="#mas ayuda">contacto</a></li>
                          </ul>
                        </li>
                      </ul>
@@ -74,7 +77,7 @@
 </aside>
 <main class="main">
     <div>
-        <table class="menus">
+        <table class="menus" id="buffet">
      <tr class="men">
 
         <td>
@@ -112,7 +115,7 @@
      </div>
 
      <div>
-         <table class="tab">
+         <table class="tab" id="spa">
       <tr class="fet">
          <td>
            Spa y Gimnasio
@@ -175,18 +178,18 @@
                </div>
              </div>
              <div class="col-xs-12 col-md-6 col-lg-3">
-               <p class="h5 mb-3">links</p>
+               <p class="h5 mb-3">contacto</p>
                <div class="mb-2">
-                 <a class="lis text-secondary text-decoration-none" href="#">instagram</a>
+                 <a class="lis text-secondary text-decoration-none" href="https://www.facebook.com/elcampitotenis" target="_blank" >facebook</a>
                </div>
                <div class="mb-2">
-                 <a class="lis text-secondary text-decoration-none" href="#">facebook</a>
+                 <a class="lis text-secondary text-decoration-none"  href="https://www.instagram.com/elcampitotenisclub/?hl=es" target="_blank" >instagram</a>
                </div>
              </div>
              <div class="col-xs-12 col-md-6 col-lg-3">
-               <p class="h5 mb-3">contacto</p>
-               <div class="mb-2">
-                 <a class="lis text-secondary text-decoration-none" href="#">mas ayuda</a>
+               <p class="h5 mb-3">link</p>
+               <div class="mb-2" id="mas ayuda">
+                 <a class="lis text-secondary text-decoration-none" href="#">mas info</a>
                </div>
              </div>
              <div class="col-xs-12">
