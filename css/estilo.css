@@ -1,0 +1,77 @@
+body {
+  font-style: italic;
+  background: linear-gradient(#332B47, #4D9BF9);
+  min-height: 100%; }
+
+.header .dropdown-menu {
+  background-color: #424141;
+  font-style: italic;
+  border: solid white; }
+
+.header .navbar .lis:hover {
+  background: linear-gradient(#f5d000, #ffc14f);
+  border-style: solid; }
+
+.sidebar__h2 {
+  display: flex;
+  text-align: center;
+  background: linear-gradient(#332B47, #4D9BF9); }
+
+.sidebar .btn {
+  background: linear-gradient(#332B47, #4D9BF9);
+  animation: animate__headShake;
+  animation-name: animacion;
+  animation-duration: 3s;
+  animation-delay: 2;
+  animation-iteration-count: infinite; }
+
+@keyframes animacion {
+  80% {
+    transform: scale(0.4);
+    animation-duration: infinite;
+    transition-duration: infinite; } }
+
+.sidebar .anchoTable {
+  width: 400px;
+  background: linear-gradient(yellow, #a39300); }
+
+.sidebar .anchoTable2 {
+  width: 400px;
+  background: linear-gradient(#d60000, #fb8585); }
+
+.acordi {
+  background: linear-gradient(yellow, #a39300); }
+
+.acordi2 {
+  background: linear-gradient(#f5d000, #ffc14f); }
+
+.acordi3 {
+  background: linear-gradient(#d60000, #fb8585); }
+
+.footer .lis:hover {
+  background: linear-gradient(#f5d000, #ffc14f);
+  border-style: solid; }
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "navbar" "sidebar" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.navbar {
+  grid-area: navbar; }
+
+.sidebar {
+  grid-area: sidebar; }
+
+.footer {
+  grid-area: footer; }
+
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    background: linear-gradient(#f5d000, #ffc14f); }
+  h1 {
+    color: linear-gradient(#d60000, #fb8585);
+    font-style: italic; } }

@@ -1,30 +1,32 @@
-$negro: black;
-$dorado: gold;
-$amarillo:yellow;
-$naranja:orange;
-$rojo:rgb(141, 6, 6);
-$blue:blueviolet;
-$aqua:rgb(6, 96, 134);
+$negro: rgb(53, 53, 53);
+$dorado: linear-gradient(rgb(245, 208, 0), rgb(255, 193, 79));
+$amarillo:linear-gradient(yellow, rgb(163, 147, 0));
+$naranja:linear-gradient(rgb(214, 0, 0), rgb(251, 133, 133));
+$blue: linear-gradient(blueviolet , rgb(125, 125, 248));
 $grey: rgb(66, 65, 65);
-
-
+$degrade:linear-gradient(#332B47, #4D9BF9);
+$letrai: italic;
 
 body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: $blue;
+    font-style: $letrai;
+    
+    background: $degrade;
     min-height: 100% ;
+    
  }
 
 .header{
- 
-    
+     
     .dropdown-menu{
         background-color: $grey;
-    }
+        font-style: $letrai;
+        border: solid white;
+    
+     }
 
     .navbar .lis:hover{
-        background-color: $dorado;
-        border-style: dashed;
+        background: $dorado;
+        border-style: solid;
         
     }
  }
@@ -35,16 +37,33 @@ body{
     &__h2{
         display: flex;
     text-align: center;
-    background-color: $aqua;
+    background: $degrade;
     }
+    .btn{
+        background: $degrade;
+        animation: animate__headShake;
+        animation-name: animacion;
+        animation-duration: 3s;
+        animation-delay: 2;
+        animation-iteration-count: infinite;
+     
+        @keyframes animacion{
+            80%{ 
+                transform:scale(.4);
+                animation-duration: infinite;
+                transition-duration: infinite;
+            
+        }
+    }
+  }
 
     .anchoTable{
         width: 400px;
-        background-color: $rojo;
+        background: $amarillo;
     }
     .anchoTable2{
         width: 400px;
-        background-color: $naranja;
+        background: $naranja;
         
     }
 
@@ -52,20 +71,20 @@ body{
 }
 
 .acordi{
-    background-color:$amarillo;
+    background:$amarillo;
 }
 .acordi2{
-    background-color: $dorado;
+    background: $dorado;
 }
 .acordi3{
-    background-color: $rojo;
+    background:$naranja;
 }
 
 .footer{
  
     .lis:hover{
-        background-color: $dorado;
-        border-style: dashed;
+        background: $dorado;
+        border-style: solid;
 
     }
 }
@@ -101,11 +120,11 @@ body{
 
 @media only screen and (max-width: 480px){
     .grid-container{
-        background-color: $dorado;
+        background: $dorado;
         
     }
     h1{
-        color: $rojo;
+        color: $naranja;
         font-style: italic;
     }
 }
