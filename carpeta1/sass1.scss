@@ -1,14 +1,24 @@
-$negro: rgb(53, 53, 53);
-$dorado: linear-gradient(rgb(245, 208, 0), rgb(255, 193, 79));
-$amarillo:linear-gradient(yellow, rgb(163, 147, 0));
-$naranja:linear-gradient(rgb(214, 0, 0), rgb(251, 133, 133));
-$blue: linear-gradient(blueviolet , rgb(125, 125, 248));
-$grey: rgb(66, 65, 65);
-$degrade:linear-gradient(#332B47, #4D9BF9);
-$letrai: italic;
+@import 'variables1';
+
+
+@mixin textos ($estilo,$ancholetra){
+
+font-style: $estilo;
+font-weight: $ancholetra;
+
+}
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; }
 
 body{
-    font-style: $letrai;
+@include textos($letrai, 400);
     
     background: $degrade;
     min-height: 100% ;
@@ -20,28 +30,40 @@ body{
     .dropdown-menu{
         background-color: $grey;
         font-style: $letrai;
-        border: solid white;
+        border-style: $borde;
     
      }
 
     .navbar .lis:hover{
         background: $dorado;
-        border-style: solid;
+        border-style:$borde;
         
     }
+    .boton{
+        background: $dorado;
+        border-style: $borde;
+      }
+    
+      .boton:hover{
+        background: $degrade;
+      }
+    
  }
 
 
 
 .sidebar{
+    @include textos(inherit,700 );
+
+
     &__h2{
         display: flex;
     text-align: center;
     background: $degrade;
     }
+    
     .btn{
         background: $degrade;
-        animation: animate__headShake;
         animation-name: animacion;
         animation-duration: 3s;
         animation-delay: 2;
@@ -55,6 +77,14 @@ body{
             
         }
     }
+  }
+  .boton{
+    background: $dorado;
+    border-style: $borde;
+  }
+
+  .boton:hover{
+    background: $degrade;
   }
 
     .anchoTable{
@@ -83,8 +113,10 @@ body{
 .footer{
  
     .lis:hover{
-        background: $dorado;
-        border-style: solid;
+        @include textos($letrai,500);
+        
+        letter-spacing: 1px;
+      
 
     }
 }
@@ -111,10 +143,25 @@ body{
 
 .sidebar{
     grid-area: sidebar;
+    .anchoTable{
+        text-align: center;
+    }
+    .anchoTable2{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        font-weight: 700;
+    }
+    .dropdown{
+        text-align: center;
+        
+    }
 }
 
 .footer{
     grid-area: footer;
+    text-align: center;
 }
 
 
@@ -125,8 +172,10 @@ body{
     }
     h1{
         color: $naranja;
-        font-style: italic;
+        font-style: $letrai;
     }
 }
+
+
 
  

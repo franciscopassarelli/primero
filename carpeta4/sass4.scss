@@ -1,3 +1,7 @@
+
+@import 'variables4';
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,61 +13,50 @@ body{
     width: 100%;
  }
 
+html{
+  width: 100%;
+}
+
+
+ 
+
  .header{
 
-    .navbar-brand{
-        color: rgb(51, 7, 226);
-        animation-name: animacion;
-        animation-duration: 5s;
-        animation-delay: 0;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-     }
-    @keyframes animacion{
-            50%{ 
-                transform:scale(.3);
-                animation-duration: infinite;
-                transition-duration: infinite;
-                color: rgb(85, 0, 182);
-                
-        }
-        
-    }
 
-    .container-fluid{
-        background: linear-gradient(rgb(1, 93, 1), rgb(104, 228, 104), rgb(138, 211, 138));
-     }
-    
-    .can{
-        background: linear-gradient(rgb(1, 93, 1), rgb(104, 228, 104), rgb(138, 211, 138));
-    }
-    
+
+ 
+  .container-fluid{
+      background: $grad3;
+   }
+  
+  .can{
+      background: $grad4;
+  }
+
+
+
     .menos{
-        background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
-    }
-    
-    .men:hover{
-        background: linear-gradient(rgb(0, 131, 0),rgb(145, 251, 145));
-    
-    }
+      background: $grad2;
+  }
 
-    nave{
+  .men:hover{
+      background: $grad4;
+  
+  }
 
-     background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
-}
-.dep{
-    background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
-    color: #000;
+
+
+
+
+ 
 }
 
-
-
- }
+   
 
 
 
 
- main{
+ .aside{
      color: #2a2929;
      width: 100%;
      height: 100vh;
@@ -152,7 +145,7 @@ body{
       }
 
 
-      .sidebar{
+      .main{ 
 
         .section1{
             background-image: url(https://www.racketclub.com/es/images/secciones/3/img0000.jpg);
@@ -184,12 +177,24 @@ body{
             
         }
 
+         .imag{
+          text-align: center;
+         }
 
+        .imag .im{
+          width: 260px;
+          height: 260px;
+          padding: 4px;
+          ;
+
+ 
       }
-
+           
+    }
 
 
       .footer{
+
 
 
 
@@ -201,10 +206,60 @@ body{
 
       }
 
-      .men:hover{
-        background: linear-gradient(rgb(0, 131, 0),rgb(145, 251, 145));
+      .pie:hover{
+        letter-spacing: 1px;
+        font-style: italic;
+        font-weight: 500;
     
     }
 
 
       }
+    
+
+
+
+      @media only screen and (max-width: 480px){
+
+        .grid-container{
+          display: grid;
+          gap:10px;
+          grid-template-areas:
+          "header"
+          "aside"
+          "main"
+          "footer" ;
+      }
+
+      .header{
+        grid-area: header;
+        width: auto;
+
+      }
+
+
+      .aside{
+        grid-area: aside;
+        width: auto;
+
+     
+        
+      }
+
+      .main{
+        grid-area: main;
+        width: auto;
+
+
+
+      }
+
+      .footer{
+        grid-area: footer;
+        width: auto;
+        text-align: center;
+      }
+
+      }
+        
+      

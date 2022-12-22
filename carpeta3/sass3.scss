@@ -1,3 +1,6 @@
+
+@import 'variables3';
+
 *{
     margin: 0px;
     padding: 0px;
@@ -17,15 +20,14 @@ min-height: 100%;
 
 .header{
 
-
+    
 
     h1{
         text-align: center;
         font-size: 150px;
-        color: rgb(64, 52, 89);
-        box-shadow: 40px 30px 20px rgb(158, 126, 227), 40px 30px, 20px rgb(152, 181, 224);
-        text-shadow: 4px 4px 4px rgb(110, 72, 223);
-    
+        color: $violet;
+        box-shadow: 40px 30px 20px $violet2, 40px 30px, 20px $violet3;
+        text-shadow: 4px 4px 4px $violet2;
         animation-name: animar;
         animation-duration: 3s;
         animation-delay: 0;
@@ -35,50 +37,33 @@ min-height: 100%;
             0%{ 
                 transform:scale(.3);
                 text-shadow: 6px 6px 6px ;
-                color: rgb(145, 201, 241);
+                color: $blue4;
                 
         }
     }
+  
     
-    
-    
-    .lista{
-        padding: 20px;
-        background-color: black;
-    
-        
-    }
-    .lista .lis:hover{
-        color: rgb(23, 29, 34);
-    
-    
-    
+ 
+    .dropdown-menu{
+        background-color: $gray;
+        font-style: $italica;
+        border-style: $borde;
     
     }
-    .lista .lis:hover{
-        background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-        color: rgba(233, 199, 28, 0.915);
+
+    .navbar{
+        border-style:$borde;
+        font-style: $italica;
     }
+    
     
     .lis:hover{
-        background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-        border-style: unset;
+        
+        background: $dorado;
+        
+        
     }
     
-    
-    .otras{ 
-        margin-left: 75px;
-        box-sizing: border-box;
-        border: 10px inset rgb(3, 50, 116);
-        color: rgb(0, 138, 192);
-        background-color: rgba(0, 0, 0, 0.519);
-        font-size: 20px;
-        margin-bottom: 30px;
-        display: block;
-    
-    }
-    
-
 
 }
 
@@ -86,34 +71,36 @@ min-height: 100%;
 
     .medidas{
 
-        border: 10px inset rgb(3, 50, 116);
-        color: rgb(76, 4, 79);
-        background-color: rgba(0, 0, 0, 0.519);
+        border: 10px inset $blue1;
+        color: $violet1;
+        background-color: $gris;
         font-size: 2rem;
         margin-right: 1300px;
     }
     
     .medidas .med{
-        color: rgb(67, 0, 105);
+        color: $violet1;
         text-decoration: none;
         padding: 20px;
     }
     .medidas .med:hover{
-        color: rgb(137, 57, 203);
+        color: $violet2;
     }
     .medidas .med:hover{
-        background-color: rgb(44, 4, 67);
-        color: rgba(227, 193, 24, 0.915);
+        background-color: $dorado;
+        color: $blanco;
     }
+
+
     h2{
         letter-spacing: 1px;
         font-weight: 500;
         font-style: italic;
         text-align: center;
         box-sizing: border-box;
-        border: 5px double rgb(33, 107, 211);
+        border: 5px double $blue3;
         color: rgb(0, 0, 0);
-        background-color: rgba(68, 85, 237, 0.519);
+        background-color: $blue2;
         font-size: 2rem;
         margin-bottom: 30px;
         animation-name: animacion;
@@ -152,10 +139,10 @@ min-height: 100%;
         margin: auto;
         margin-top: 50px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color:rgb(64, 0, 29);
+        color:$bordo;
         border-style: outset; 
-        border-color: rgb(1, 22, 35);
-        background-image: radial-gradient(circle at 95.76% 50%, #025886 0, #0084a5 16.67%, #007da1 33.33%, #105670 50%, #163241 66.67%, #092e45 83.33%, #0b1834 100%);
+        border-color: $gris;
+        background-image: $gradient1;
     
     
         
@@ -186,28 +173,28 @@ min-height: 100%;
 
 
 .footer{
+    
+    font-style: $italica;
+    
+    
 
-    .lista .lis:hover{
-        color: rgb(23, 29, 34);
-    
-    
-    
-    
-    }
-    .lista .lis:hover{
-        background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-        color: rgba(233, 199, 28, 0.915);
-    }
-    
     .lis:hover{
-        background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-        border-style: unset;
+        
+        letter-spacing: 1px;
+        font-weight: 500;
+        
+
+        
+
     }
+    
+
+
 
     h5{
         font-size: 2rem;
-        background-color: rgb(0, 0, 0);
-        color: rgb(72, 72, 72);
+        background-color: $negro;
+        color: $gris;
     }
     
     
@@ -249,15 +236,15 @@ min-height: 100%;
 
 @media only screen and (max-width: 480px){  
     body{
-        background: rgb(23, 7, 38);
+        background: $violet;
     }
     h1{
-        text-shadow: #0010aa, blueviolet;
+        text-shadow: $blue , $violet1;
         display: inline-block;
         text-align: center;
         letter-spacing: 1px;
         font-weight: 500;
-        font-style: italic;
+        font-style: $italica;
         font-family: 1rem;
         
     }
@@ -273,34 +260,51 @@ min-height: 100%;
     }
     .header{
         grid-area: header;
+        width: auto;
     }
     
 
     .main{
         grid-area: main;
+        width: auto;
+        .medidas {
+            padding-right: 400px;
+            
+
+            
+        }
+   
+    
+    
     
     }
 
     .aside{
         grid-area: aside;
+        width: auto;
+        margin: auto;
+        .imag .im{
+            width: 260px;
+            height: 260px;
+            padding: 4px;
+        
+    
+        }
+    
         
 
     }
     
     .footer{
         grid-area: footer;
+        text-align: center;
         
         
 
     
     }
 
-    .imag .im{
-        width: 250px;
-        height: 250px;
-
-    }
-
+    
  
 
  }
