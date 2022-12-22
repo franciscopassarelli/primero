@@ -13,9 +13,9 @@ body {
 .header h1 {
   text-align: center;
   font-size: 150px;
-  color: #403459;
-  box-shadow: 40px 30px 20px #9e7ee3, 40px 30px, 20px #98b5e0;
-  text-shadow: 4px 4px 4px #6e48df;
+  color: #38275d;
+  box-shadow: 40px 30px 20px #9c65ea, 40px 30px, 20px #c88ffa;
+  text-shadow: 4px 4px 4px #9c65ea;
   animation-name: animar;
   animation-duration: 3s;
   animation-delay: 0;
@@ -25,51 +25,38 @@ body {
   0% {
     transform: scale(0.3);
     text-shadow: 6px 6px 6px;
-    color: #91c9f1; } }
+    color: #0395bd; } }
 
-.header .lista {
-  padding: 20px;
-  background-color: black; }
+.header .dropdown-menu {
+  background-color: #515151;
+  font-style: italic;
+  border-style: hidden; }
 
-.header .lista .lis:hover {
-  color: #171d22; }
-
-.header .lista .lis:hover {
-  background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-  color: rgba(233, 199, 28, 0.915); }
+.header .navbar {
+  border-style: hidden;
+  font-style: italic; }
 
 .header .lis:hover {
-  background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-  border-style: unset; }
-
-.header .otras {
-  margin-left: 75px;
-  box-sizing: border-box;
-  border: 10px inset #033274;
-  color: #008ac0;
-  background-color: rgba(0, 0, 0, 0.519);
-  font-size: 20px;
-  margin-bottom: 30px;
-  display: block; }
+  background: #d1b200; }
 
 .main .medidas {
-  border: 10px inset #033274;
-  color: #4c044f;
-  background-color: rgba(0, 0, 0, 0.519);
+  border: 10px inset #2b2bb2;
+  color: #520293;
+  background-color: #132732;
   font-size: 2rem;
   margin-right: 1300px; }
 
 .main .medidas .med {
-  color: #430069;
+  color: #520293;
   text-decoration: none;
   padding: 20px; }
 
 .main .medidas .med:hover {
-  color: #8939cb; }
+  color: #9c65ea; }
 
 .main .medidas .med:hover {
-  background-color: #2c0443;
-  color: rgba(227, 193, 24, 0.915); }
+  background-color: #d1b200;
+  color: white; }
 
 .main h2 {
   letter-spacing: 1px;
@@ -77,9 +64,9 @@ body {
   font-style: italic;
   text-align: center;
   box-sizing: border-box;
-  border: 5px double #216bd3;
+  border: 5px double #2167f1;
   color: black;
-  background-color: rgba(68, 85, 237, 0.519);
+  background-color: #5b32fd;
   font-size: 2rem;
   margin-bottom: 30px;
   animation-name: animacion;
@@ -110,7 +97,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #40001d;
   border-style: outset;
-  border-color: #011623;
+  border-color: #132732;
   background-image: radial-gradient(circle at 95.76% 50%, #025886 0, #0084a5 16.67%, #007da1 33.33%, #105670 50%, #163241 66.67%, #092e45 83.33%, #0b1834 100%); }
 
 .aside .video {
@@ -124,21 +111,15 @@ body {
   width: 300px;
   height: 300px; }
 
-.footer .lista .lis:hover {
-  color: #171d22; }
-
-.footer .lista .lis:hover {
-  background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-  color: rgba(233, 199, 28, 0.915); }
-
-.footer .lis:hover {
-  background-image: radial-gradient(circle at 81.38% 55.53%, #f300ff 0, #bc00f7 25%, #8100de 50%, #3e0bc3 75%, #0010aa 100%);
-  border-style: unset; }
-
-.footer h5 {
-  font-size: 2rem;
-  background-color: black;
-  color: #484848; }
+.footer {
+  font-style: italic; }
+  .footer .lis:hover {
+    letter-spacing: 1px;
+    font-weight: 500; }
+  .footer h5 {
+    font-size: 2rem;
+    background-color: black;
+    color: #132732; }
 
 .grid-container {
   display: grid;
@@ -159,9 +140,9 @@ body {
 
 @media only screen and (max-width: 480px) {
   body {
-    background: #170726; }
+    background: #38275d; }
   h1 {
-    text-shadow: #0010aa, blueviolet;
+    text-shadow: #3a00a4, #520293;
     display: inline-block;
     text-align: center;
     letter-spacing: 1px;
@@ -173,13 +154,21 @@ body {
     gap: 10px;
     grid-template-areas: "header" "main" "aside" "footer"; }
   .header {
-    grid-area: header; }
+    grid-area: header;
+    width: auto; }
   .main {
-    grid-area: main; }
+    grid-area: main;
+    width: auto; }
+    .main .medidas {
+      padding-right: 400px; }
   .aside {
-    grid-area: aside; }
+    grid-area: aside;
+    width: auto;
+    margin: auto; }
+    .aside .imag .im {
+      width: 260px;
+      height: 260px;
+      padding: 4px; }
   .footer {
-    grid-area: footer; }
-  .imag .im {
-    width: 250px;
-    height: 250px; } }
+    grid-area: footer;
+    text-align: center; } }

@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-style: italic;
+  font-weight: 400;
+  background: linear-gradient(#332B47, #4D9BF9);
+  min-height: 100%; }
+
+.header .dropdown-menu {
+  background-color: #424141;
+  font-style: italic;
+  border-style: hidden; }
+
+.header .navbar .lis:hover {
+  background: linear-gradient(#f5d000, #ffc14f);
+  border-style: hidden; }
+
+.header .boton {
+  background: linear-gradient(#f5d000, #ffc14f);
+  border-style: hidden; }
+
+.header .boton:hover {
+  background: linear-gradient(#332B47, #4D9BF9); }
+
+.sidebar {
+  font-style: inherit;
+  font-weight: 700; }
+  .sidebar__h2 {
+    display: flex;
+    text-align: center;
+    background: linear-gradient(#332B47, #4D9BF9); }
+  .sidebar .btn {
+    background: linear-gradient(#332B47, #4D9BF9);
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-delay: 2;
+    animation-iteration-count: infinite; }
+
+@keyframes animacion {
+  80% {
+    transform: scale(0.4);
+    animation-duration: infinite;
+    transition-duration: infinite; } }
+  .sidebar .boton {
+    background: linear-gradient(#f5d000, #ffc14f);
+    border-style: hidden; }
+  .sidebar .boton:hover {
+    background: linear-gradient(#332B47, #4D9BF9); }
+  .sidebar .anchoTable {
+    width: 400px;
+    background: linear-gradient(yellow, #a39300); }
+  .sidebar .anchoTable2 {
+    width: 400px;
+    background: linear-gradient(#d60000, #fb8585); }
+
+.acordi {
+  background: linear-gradient(yellow, #a39300); }
+
+.acordi2 {
+  background: linear-gradient(#f5d000, #ffc14f); }
+
+.acordi3 {
+  background: linear-gradient(#d60000, #fb8585); }
+
+.footer .lis:hover {
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 1px; }
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "navbar" "sidebar" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.navbar {
+  grid-area: navbar; }
+
+.sidebar {
+  grid-area: sidebar; }
+  .sidebar .anchoTable {
+    text-align: center; }
+  .sidebar .anchoTable2 {
+    text-align: center; }
+  .sidebar h2 {
+    text-align: center;
+    font-weight: 700; }
+  .sidebar .dropdown {
+    text-align: center; }
+
+.footer {
+  grid-area: footer;
+  text-align: center; }
+
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    background: linear-gradient(#f5d000, #ffc14f); }
+  h1 {
+    color: linear-gradient(#d60000, #fb8585);
+    font-style: italic; } }

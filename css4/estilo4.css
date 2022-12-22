@@ -7,41 +7,22 @@ body {
   background-image: url(https://thumbs.dreamstime.com/b/tennis-ball-court-line-off-center-9205576.jpg);
   width: 100%; }
 
-.header .navbar-brand {
-  color: #3307e2;
-  animation-name: animacion;
-  animation-duration: 5s;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite; }
-
-@keyframes animacion {
-  50% {
-    transform: scale(0.3);
-    animation-duration: infinite;
-    transition-duration: infinite;
-    color: #5500b6; } }
+html {
+  width: 100%; }
 
 .header .container-fluid {
-  background: linear-gradient(#015d01, #68e468, #8ad38a); }
+  background: linearGradient(#393939, #9f9f9f); }
 
 .header .can {
-  background: linear-gradient(#015d01, #68e468, #8ad38a); }
+  background: linear-gradient(#f09c00, #ff883d); }
 
 .header .menos {
-  background: linear-gradient(#deb600, #e1d11f, #e7b570); }
+  background: linear-gradient(#e4b200, #ffe96b); }
 
 .header .men:hover {
-  background: linear-gradient(#008300, #91fb91); }
+  background: linear-gradient(#f09c00, #ff883d); }
 
-.header nave {
-  background: linear-gradient(#deb600, #e1d11f, #e7b570); }
-
-.header .dep {
-  background: linear-gradient(#deb600, #e1d11f, #e7b570);
-  color: #000; }
-
-main {
+.aside {
   color: #2a2929;
   width: 100%;
   height: 100vh;
@@ -50,13 +31,13 @@ main {
   align-items: center;
   justify-content: center;
   /* FLIP CARD */ }
-  main h4 {
+  .aside h4 {
     font-size: 2rem;
     font-style: unset;
     color: #e8d615;
     box-shadow: 40px 30px 20px #008ebd, 40px 30px, 20px #a3b865;
     text-shadow: 4px 4px 4px black; }
-  main h4 span {
+  .aside h4 span {
     font-size: 4rem;
     color: #656598;
     margin-top: 0;
@@ -74,16 +55,16 @@ main {
     transition-duration: infinite;
     box-shadow: inset;
     color: #00aa85; } }
-  main p {
+  .aside p {
     margin: 0; }
-  main .cards-grid {
+  .aside .cards-grid {
     display: flex;
     grid-gap: 80px; }
-  main .flip-card {
+  .aside .flip-card {
     width: 320px;
     height: 504px;
     perspective: 2000px; }
-  main .flip-card-inner {
+  .aside .flip-card-inner {
     margin-left: -200px;
     position: relative;
     width: 100%;
@@ -92,17 +73,17 @@ main {
     border-radius: 28px;
     transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
     transform-style: preserve-3d; }
-  main .flip-card-front, main .flip-card-back {
+  .aside .flip-card-front, .aside .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 28px;
     backface-visibility: hidden; }
-  main .flip-card-front {
+  .aside .flip-card-front {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-  main .flip-card-back {
+  .aside .flip-card-back {
     font-size: 1.25rem;
     text-align: center;
     display: grid;
@@ -110,10 +91,10 @@ main {
     padding: 32px;
     background-color: gray;
     transform: rotateY(180deg); }
-  main .flip-card:hover .flip-card-inner {
+  .aside .flip-card:hover .flip-card-inner {
     transform: rotateY(-180deg); }
 
-.sidebar .section1 {
+.main .section1 {
   background-image: url(https://www.racketclub.com/es/images/secciones/3/img0000.jpg);
   height: 500px;
   width: 1221px;
@@ -121,27 +102,56 @@ main {
   padding-left: 100px;
   margin: auto; }
 
-.sidebar h3 {
+.main h3 {
   font-size: 20px;
   color: #f5d6d6;
   background-color: #1e1a1a;
   color: #000;
   opacity: .5; }
 
-.sidebar h3 :hover {
+.main h3 :hover {
   color: #dac6c6;
   font-family: cursive;
   font-size: 30px; }
 
-.sidebar h3 :hover {
+.main h3 :hover {
   background-color: #fbf3fe;
   color: #080202;
   font-family: 30px; }
+
+.main .imag {
+  text-align: center; }
+
+.main .imag .im {
+  width: 260px;
+  height: 260px;
+  padding: 4px; }
 
 .footer h5 {
   font-size: 2rem;
   background-color: black;
   color: #3fdce7; }
 
-.footer .men:hover {
-  background: linear-gradient(#008300, #91fb91); }
+.footer .pie:hover {
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 500; }
+
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header" "aside" "main" "footer"; }
+  .header {
+    grid-area: header;
+    width: auto; }
+  .aside {
+    grid-area: aside;
+    width: auto; }
+  .main {
+    grid-area: main;
+    width: auto; }
+  .footer {
+    grid-area: footer;
+    width: auto;
+    text-align: center; } }

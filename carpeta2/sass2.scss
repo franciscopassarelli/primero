@@ -1,3 +1,5 @@
+@import 'variables2';
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,40 +9,40 @@
         font-style: inherit;
         font-weight: 500;
         letter-spacing: 1px;
-        background-color: rgb(194, 91, 12);
    background-image: url(https://img.freepik.com/vector-gratis/fondo-arco-iris-degradado_1159-31590.jpg?w=2000);
-    }
 
+    }
     html{
         width: 100%;
     }
+   
 
     .header{
 
     
     .container-fluid{
-        background: linear-gradient(rgb(1, 93, 1), rgb(104, 228, 104), rgb(138, 211, 138));
+        background: $grad3;
      }
     
     .can{
-        background: linear-gradient(rgb(1, 93, 1), rgb(104, 228, 104), rgb(138, 211, 138));
+        background: $grad4;
     }
 
 
 
       .menos{
-        background: linear-gradient(rgb(222, 182, 0), rgb(225, 209, 31), rgb(231, 181, 112));
+        background: $grad2;
     }
 
     .men:hover{
-        background: linear-gradient(rgb(185, 192, 0),rgb(255, 42, 0));
+        background: $grad4;
     
     }
 
     
     h1{
         display: inline-block;
-        background-color: gold;
+        background-color: $golden;
         padding-top: 40px;
         font-size: 60px;
     }
@@ -50,31 +52,30 @@
 
 
 
- .sidebar{
+ .aside{
 
     .lore{
-        margin: auto;
+        margin: $auto;
         margin-top: 50px;
-        border: 10px solid rgb(149, 119, 43);
-        background: rgb(176, 104, 2)
+        border: 10px solid $oro;
+        background: $oro2;
+    
     
     }
 
     .lore{
         width: 50%;
-
     }
+    
       
-   .lore img{
+   .lore .img{
         float: left;
         margin-right: 20px;
-    }
-
-
-
-
- }
-
+        
+        
+    
+}
+}
 
 
  .main{
@@ -83,9 +84,9 @@
     .menus{
         display: inline-block;    
         box-sizing: border-box;
-        border: 5px outset goldenrod;
+        border: 5px outset $golden;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(211, 173, 0);
+        background-color: $gold;
         list-style-type: none;
         }
         .menus .men{
@@ -95,25 +96,25 @@
         font-size: 2rem;
         text-align: center;
         box-sizing: border-box;
-        border: 5px rgb(241, 79, 10);
+        border: 5px $oro2;
         
         }
         .menus .men:hover{
-        color: goldenrod;
+        color: $golden;
         }
         
         .menus .men:hover{
-            background-color: gold;
-            color: rgb(189, 122, 29);
+            background-color: $gold;
+            color: $golden;
         }
         
         
         .mun{
-        margin: auto;
+        margin: $auto;
         margin-top: 50px;
-        border: 10px solid gold;
-        background: rgb(176, 104, 2);
-        width: 50%;
+        border: 10px solid $golden;
+        background: $oro;
+        
         }
         
         .mun{
@@ -125,12 +126,13 @@
                 float: left;
                 margin-right: 20px;
             }
+        
             .tab{
                 display: inline-block;    
                 box-sizing: border-box;
-                border: 5px outset rgb(16, 66, 69);
+                border: 5px outset $aqua;
                 font-family: Arial, Helvetica, sans-serif;
-                background-color: rgb(31, 169, 132);
+                background-color: $acua;
                 list-style-type: none;
                 }
                 .tab .fet{
@@ -140,26 +142,26 @@
                 font-size: 2rem;
                 text-align: center;
                 box-sizing: border-box;
-                border: 5px rgb(25, 84, 79);
+                border: 5px $aqua;
                 
                 }
                 .tab .fet:hover{
-                color: rgb(4, 23, 29);
+                color: $aqua1;
                 }
                 
                 .tab .fet:hover{
-                    background-color: rgb(0, 85, 96);
-                    color: rgb(7, 13, 16);
+                    background-color: $aqua;
+                    color: $aqua1;
                 }
                 
         
         
             .cont{
-                margin: auto;
+                margin: $auto;
                 margin-top: 50px;
-                border: 10px solid rgb(0, 85, 95);
-                background: rgb(6, 164, 161);
-                width: 50%
+                border: 10px solid $aqua;
+                background: $acua;
+            
             }
         
             .cont{
@@ -167,7 +169,7 @@
         
             }
               
-           .cont .spaa{
+            .cont .spaa{
             font-weight: 100;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             float: left;
@@ -176,8 +178,8 @@
             
             .ite{
                 font-family: Arial, Helvetica, sans-serif;
-                background-color: rgb(134, 87, 0);
-                color: rgb(22, 22, 21);
+                background-color: $oro;
+                color: $grey;
                 list-style-type: none;
                 text-align: center;
                 padding: 0px;
@@ -191,12 +193,12 @@
                 
             }
             .ite .ite1:hover{
-            color: rgb(173, 81, 0);
+            color: $oro2;
             text-decoration: none;
             }
             .ite .ite1:hover{
-                background-color: rgb(211, 174, 27);
-                color: rgb(232, 200, 72);
+                background-color: $golden;
+                color: $gold;
             }
 
 
@@ -213,24 +215,30 @@
     }
 
     .lis:hover{
-        background-color: gold;
+        font-style: $itali;
+        letter-spacing: 2px;
+        font-weight: 600;
     }
 
+     }
 
 
-}
+
+
+    
        
     
     .grid-container{ 
         display: grid;
         gap:10px;
-        grid-template-areas: 
+        grid-template-areas:
         "header"
         "navbar"
-        "sidebar"
+        "aside"
         "main"
         "footer" ;
     }
+    
     
     .header{
         grid-area: header;
@@ -241,74 +249,83 @@
     
     }
     
-    .sidebar{
-        grid-area: sidebar;
+    .aside{
+        grid-area: aside;
+    }
+    .main{
+        grid-area: main;
     }
     
     .footer{
         grid-area: footer;
     }
     
+
+    
+
     
     @media only screen and (max-width: 480px){
         body{
-            background: chocolate;
+            background: $oro2;
         }
         h1{
-            background-color: rgb(228, 192, 62);
+            background-color: $gold;
             display: inline-block;
             text-align: center;
         }
-        .grid-container{
-            display: grid;
-            gap:10px;
-            grid-template-areas: 
-            "header"
-            "navbar"
-            "sidebar"
-            "main"
-            "footer";
-        }
-        .header{
-            grid-area: header;
-        }
-        
-        .navbar{
-            grid-area: navbar;
-        
-        }
-        
-        .sidebar{
-            grid-area: sidebar;
-
-    
-
-        }
        
-         .lore{
-                width: auto;
+       .grid-container{
+        display: grid;
+        gap:10px;
+        grid-template-areas: 
+        "header"
+        "navbar"
+        "aside"
+        "main"
+        "footer";
+    }
+    .header{
+        grid-area: header;
         
-            }
-            .mun{
-                width: auto;
-            }
-            .cont{
-                width: auto;
-            }
-              
-        
-        }
-        .main{
-            grid-area: main;
-        
-        }
-        
-        .footer{
-            grid-area: footer;
-        
-        }
+    }
     
-        
-        
+    .navbar{
+        grid-area: navbar;
+    
+    
+    }
+    
+    .aside{
+        grid-area: aside;
+
+        .lore{
+            width: $auto;
+    
+        }
+
+    }
+   
+    
+    
+    .main{
+        grid-area: main;
 
     
+        .mun{
+            width: $auto;
+        }
+        .cont{
+            width: $auto;
+        }
+    
+    }
+    
+    .footer{
+        
+        grid-area: footer;
+        text-align: center;
+    
+    
+    }
+
+}
